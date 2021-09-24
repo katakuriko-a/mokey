@@ -1,0 +1,317 @@
+body {
+  background-color: #4bbfbe;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: #fff;
+}
+
+h6 {
+  margin: 0;
+}
+
+.logo {
+  & > p {
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    position: absolute;
+    top: 18px;
+    left: 100px;
+    margin: 0;
+  }
+  &_img {
+    width: 64px;
+    position: absolute;
+    top: 12px;
+    left: 24px;
+  }
+}
+
+.primaryButton {
+  background-color: #fff;
+  display: inline-block;
+  border-radius: 16px;
+  text-align: center;
+  padding: 12px 24px;
+  font-weight: bold;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+}
+
+.signIn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  color: #333;
+}
+
+.top {
+  display: flex;
+
+  width: 80%;
+  margin: 200px auto 0;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    font-size: 64px;
+  }
+
+  &_left {
+    width: 400px;
+    color: #fff;
+    letter-spacing: 0.2em;
+  }
+
+  &_img {
+    width: 400px;
+  }
+}
+
+.service {
+  margin-top: 144px;
+
+  &_description {
+    width: 80%;
+    margin: 0 auto;
+
+    & h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+
+    & h3 {
+      color: rgb(255, 213, 136);
+    }
+  }
+
+  &_item {
+    width: 80%;
+    margin: 64px auto 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &_card {
+    color: #333;
+    background-color: #fff;
+    padding: 32px 16px 32px;
+    text-align: center;
+    border-radius: 16px;
+    width: 32%;
+
+    & > p {
+      text-align: left;
+    }
+  }
+
+  &_img {
+    width: 90%;
+  }
+}
+
+.price {
+  margin-top: 144px;
+
+  &_fee {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    background-color: #fff;
+    width: 300px;
+    border-radius: 16px;
+    margin: 36px auto 0;
+
+    & > h1 {
+      font-size: 64px;
+      color: rgb(116, 214, 145);
+      text-align: center;
+      margin: 0;
+    }
+    & > p {
+      margin: 8px;
+      font-weight: bold;
+      color: #333;
+    }
+  }
+}
+
+.btncover {
+  text-align: center;
+}
+
+.viewMore {
+  margin-top: 24px;
+  color: #333;
+}
+
+.contact {
+  position: relative;
+  margin-top: 64px;
+  overflow: hidden;
+
+  &_img {
+    width: 120%;
+    height: 600px;
+  }
+
+  &_title {
+    color: #333;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+
+    & h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+
+    & h3 {
+      color: rgb(255, 213, 136);
+    }
+  }
+
+  &_btn {
+    text-align: right;
+  }
+
+  &_form {
+    width: 80%;
+    color: #333;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    & > input {
+      width: 100%;
+      background-color: rgb(227, 227, 227);
+      border: none;
+      height: 24px;
+      margin-bottom: 24px;
+      border-radius: 8px;
+    }
+    & > textarea {
+      width: 100%;
+      margin-bottom: 24px;
+      background-color: rgb(227, 227, 227);
+      border: none;
+      height: 64px;
+      border-radius: 8px;
+    }
+
+    & .primaryButton {
+      background-color: #4bbfbe;
+      border: none;
+      color: #fff;
+      margin-right: 16px;
+    }
+  }
+}
+
+footer {
+  padding-top: 1%;
+  padding-bottom: 24px;
+  width: 100%;
+  background-color: #fff;
+  & > p {
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+
+  }
+}
+
+@media screen and (max-width:600px) {
+  .top {
+    margin-top: 72px;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    &_left {
+      text-align: center;
+      margin-bottom: 64px;
+      width: 90%;
+      
+      & > p {
+        text-align: left;
+      }
+    }
+    & > img {
+      margin-right: 24px;
+      width: 90%;
+    }
+  }
+
+  .service {
+    &_item {
+      flex-direction: column;
+    }
+
+    &_card {
+      width: 90%;
+      margin: 0 auto 24px;
+    }
+  }
+  
+  .logo {
+    
+    & > img {
+      top: 20px;
+    }
+    & > p {
+      visibility: hidden;
+    }
+  }
+  .signIn {
+    width: 100px;
+  }
+
+}
+
+@media screen and (min-width:1024px)  {
+  .top {
+
+    &_left {
+      width: 45%;
+    }
+    &_img {
+width: 45%;
+    }
+  }
+}
+
+.fade_in {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 1s;
+
+  &.inview {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+.ttl {
+
+  &.inview{
+    animation-name:fadeIn;
+    animation-direction: 1s;
+    animation-duration: 1s;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

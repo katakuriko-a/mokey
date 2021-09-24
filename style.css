@@ -1,0 +1,347 @@
+body {
+  background-color: #4bbfbe;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: #fff;
+}
+
+h6 {
+  margin: 0;
+}
+
+.logo > p {
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+  position: absolute;
+  top: 18px;
+  left: 100px;
+  margin: 0;
+}
+
+.logo_img {
+  width: 64px;
+  position: absolute;
+  top: 12px;
+  left: 24px;
+}
+
+.primaryButton {
+  background-color: #fff;
+  display: inline-block;
+  border-radius: 16px;
+  text-align: center;
+  padding: 12px 24px;
+  font-weight: bold;
+}
+
+.primaryButton:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.signIn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  color: #333;
+}
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 200px auto 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top h1 {
+  font-size: 64px;
+}
+
+.top_left {
+  width: 400px;
+  color: #fff;
+  letter-spacing: 0.2em;
+}
+
+.top_img {
+  width: 400px;
+}
+
+.service {
+  margin-top: 144px;
+}
+
+.service_description {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.service_description h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.service_description h3 {
+  color: #ffd588;
+}
+
+.service_item {
+  width: 80%;
+  margin: 64px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.service_card {
+  color: #333;
+  background-color: #fff;
+  padding: 32px 16px 32px;
+  text-align: center;
+  border-radius: 16px;
+  width: 32%;
+}
+
+.service_card > p {
+  text-align: left;
+}
+
+.service_img {
+  width: 90%;
+}
+
+.price {
+  margin-top: 144px;
+}
+
+.price_fee {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  width: 300px;
+  border-radius: 16px;
+  margin: 36px auto 0;
+}
+
+.price_fee > h1 {
+  font-size: 64px;
+  color: #74d691;
+  text-align: center;
+  margin: 0;
+}
+
+.price_fee > p {
+  margin: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.btncover {
+  text-align: center;
+}
+
+.viewMore {
+  margin-top: 24px;
+  color: #333;
+}
+
+.contact {
+  position: relative;
+  margin-top: 64px;
+  overflow: hidden;
+}
+
+.contact_img {
+  width: 120%;
+  height: 600px;
+}
+
+.contact_title {
+  color: #333;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+}
+
+.contact_title h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.contact_title h3 {
+  color: #ffd588;
+}
+
+.contact_btn {
+  text-align: right;
+}
+
+.contact_form {
+  width: 80%;
+  color: #333;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.contact_form > input {
+  width: 100%;
+  background-color: #e3e3e3;
+  border: none;
+  height: 24px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+}
+
+.contact_form > textarea {
+  width: 100%;
+  margin-bottom: 24px;
+  background-color: #e3e3e3;
+  border: none;
+  height: 64px;
+  border-radius: 8px;
+}
+
+.contact_form .primaryButton {
+  background-color: #4bbfbe;
+  border: none;
+  color: #fff;
+  margin-right: 16px;
+}
+
+footer {
+  padding-top: 1%;
+  padding-bottom: 24px;
+  width: 100%;
+  background-color: #fff;
+}
+
+footer > p {
+  font-size: 12px;
+  color: #333;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .top {
+    margin-top: 72px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .top_left {
+    text-align: center;
+    margin-bottom: 64px;
+    width: 90%;
+  }
+  .top_left > p {
+    text-align: left;
+  }
+  .top > img {
+    margin-right: 24px;
+    width: 90%;
+  }
+  .service_item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .service_card {
+    width: 90%;
+    margin: 0 auto 24px;
+  }
+  .logo > img {
+    top: 20px;
+  }
+  .logo > p {
+    visibility: hidden;
+  }
+  .signIn {
+    width: 100px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .top_left {
+    width: 45%;
+  }
+  .top_img {
+    width: 45%;
+  }
+}
+
+.fade_in {
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.fade_in.inview {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  opacity: 1;
+}
+
+.ttl.inview {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-direction: 1s;
+          animation-direction: 1s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */
